@@ -12,9 +12,9 @@ describe('Home Page tests', () => {
     const { getByLabelText } = render(HomePage);
 
     const thisYear = new Date().getFullYear();
-    const copyrightMsg = `${thisYear} Sweet Life Rentals`;
+    const copyrightMsg = `2019 - ${thisYear} Sweet Life Rentals`;
 
-    const copyright = getByLabelText(copyrightMsg);
+    const copyright = getByLabelText(`Copyright ${copyrightMsg}`);
     expect(copyright).toHaveTextContent(copyrightMsg);
   });
 });
