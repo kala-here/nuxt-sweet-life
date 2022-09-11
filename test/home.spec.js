@@ -8,4 +8,13 @@ describe('Home Page tests', () => {
     const title = getByLabelText('Welome to Sweet Life Rentals');
     expect(title).toHaveTextContent('Sweet Life Rentals');
   });
+  test('it has a footer', () => {
+    const { getByLabelText } = render(HomePage);
+
+    const thisYear = new Date().getFullYear();
+    const copyrightMsg = `${thisYear} Sweet Life Rentals`;
+
+    const copyright = getByLabelText(copyrightMsg);
+    expect(copyright).toHaveTextContent(copyrightMsg);
+  });
 });
