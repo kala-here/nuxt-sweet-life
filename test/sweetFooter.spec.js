@@ -13,23 +13,25 @@ describe('SweetFooter tests', () => {
   test('it has social media links: twitter and facebook', () => {
     const { getAllByRole } = render(SweetFooter);
     const navOptions = getAllByRole('link');
+
     const twitterIcon = navOptions[0];
     const fbIcon = navOptions[1];
+
+    expect(navOptions).toHaveLength(2);
 
     expect(twitterIcon).toHaveTextContent('mdi-twitter');
     expect(twitterIcon).toHaveAttribute(
       'href',
       'https://twitter.com/sweetliferental'
     );
+    expect(twitterIcon).toHaveAttribute('target', '_blank');
+
     expect(fbIcon).toHaveTextContent('mdi-facebook');
     expect(fbIcon).toHaveAttribute(
       'href',
       'https://www.facebook.com/sweetlifeholdenbeach/'
     );
-
-    // TODO: clicking opens link in new tab
-
-    expect(navOptions).toHaveLength(2);
+    expect(fbIcon).toHaveAttribute('target', '_blank');
   });
 
   test('it has copyright info', () => {

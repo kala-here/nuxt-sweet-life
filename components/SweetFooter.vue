@@ -7,6 +7,7 @@
         :href="social.url"
         role="link"
         class="text-deco--none"
+        target="_blank"
       >
         <v-btn class="mx-4 white--text" icon role="button">
           <v-icon size="24px">
