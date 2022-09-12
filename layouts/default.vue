@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <sweet-app-bar />
-    <sweet-footer />
+    <app-bar />
+    <s-b-footer />
 
     <!-- <v-main>
       <v-container>
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import SweetFooter from '../components/SweetFooter.vue';
-import SweetAppBar from '../components/SweetAppBar.vue';
+import SBFooter from '../components/SBFooter.vue';
+import AppBar from '../components/AppBar.vue';
 
 export default {
   name: 'DefaultLayout',
-  components: { SweetAppBar, SweetFooter },
+  components: { AppBar, SBFooter },
   data() {
     return {};
   },

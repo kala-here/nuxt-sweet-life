@@ -1,6 +1,9 @@
 <template>
   <v-app-bar fixed app>
-    <v-toolbar-title aria-label="Welome to Sweet Life Rentals" v-text="title" />
+    <v-toolbar-title
+      aria-label="Welome to Seabreeze Cabana Rentals"
+      v-text="title"
+    />
     <v-spacer />
   </v-app-bar>
 </template>
@@ -10,7 +13,7 @@ export default {
   name: 'AppBar',
   data() {
     return {
-      title: 'Sweet Life Rentals',
+      title: 'Seabreeze Cabana Rentals',
     };
   },
 };
