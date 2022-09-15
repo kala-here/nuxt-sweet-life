@@ -21,11 +21,9 @@
       </a>
     </div>
 
-    <div aria-label="email us at info@seabreezerentals.org" class="my-6">
-      info@seabreezerentals.org
-    </div>
+    <div class="my-6">info@seabreezerentals.org</div>
 
-    <div :aria-label="`Copyright ${copyright}`">&copy; {{ copyright }}</div>
+    <div>&copy; {{ copyright }}</div>
   </v-footer>
 </template>
 

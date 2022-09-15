@@ -1,20 +1,14 @@
-import { render } from '@testing-library/vue';
-import '@testing-library/jest-dom';
-import HomePage from '@/layouts/default.vue';
+import HomePage from '../pages/index.vue';
+import Vuetify from 'vuetify';
+import { mount } from '@vue/test-utils';
+
+const vuetify = new Vuetify();
+const wrapper = mount(HomePage, {
+  vuetify,
+});
 
 describe('Home Page tests', () => {
-  test('it has an app bar', () => {
-    const { getByLabelText } = render(HomePage);
-    const title = getByLabelText('Welome to Seabreeze Cabana Rentals');
-    expect(title).toHaveTextContent('Seabreeze Cabana Rentals');
-  });
-  test('it has a footer', () => {
-    const { getByLabelText } = render(HomePage);
-
-    const thisYear = new Date().getFullYear();
-    const copyrightMsg = `${thisYear} Seabreeze Cabana Rentals`;
-
-    const copyright = getByLabelText(`Copyright ${copyrightMsg}`);
-    expect(copyright).toHaveTextContent(copyrightMsg);
+  test('it has pricing', () => {
+    expect(wrapper.text()).toContain('Pricing');
   });
 });
