@@ -1,24 +1,25 @@
-import { within, render } from '@testing-library/vue';
+import Vuetify from 'vuetify';
 import '@testing-library/jest-dom';
 import SBFooter from '@/components/SBFooter.vue';
-import Vuetify from 'vuetify';
 import { mount } from '@vue/test-utils';
 
-const vuetify = new Vuetify();
-const wrapper = mount(SBFooter, {
-  vuetify,
-});
+let vuetify, wrapper;
 
 describe('SBFooter tests', () => {
+  beforeEach(() => {
+    vuetify = new Vuetify();
+    wrapper = mount(SBFooter, {
+      vuetify,
+    });
+  });
   test('it has location information', () => {
     const townsList = ['Oak Island, NC', 'Caswell Beach, NC', 'Southport, NC'];
-    const { getByLabelText } = render(SBFooter);
-    const towns = getByLabelText('service locations');
+    const towns = wrapper.find('div');
 
-    expect(towns.childElementCount).toBe(townsList.length);
+    expect(towns.attributes('aria-label')).toBe('service locations');
 
     for (const town of townsList) {
-      expect(within(towns).getByText(town));
+      expect(wrapper.text()).toContain(town);
     }
   });
 
