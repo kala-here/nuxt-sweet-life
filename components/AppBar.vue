@@ -1,9 +1,12 @@
 <template>
   <v-app-bar fixed app>
-    <v-toolbar-title
-      v-text="title"
-    />
+    <v-toolbar-title>
+      <NuxtLink class="text--deco-none home-link" to="/">{{ title }}</NuxtLink>
+    </v-toolbar-title>
     <v-spacer />
+    <NuxtLink class="text--deco-none contact-link" to="/contact"
+      >contact</NuxtLink
+    >
   </v-app-bar>
 </template>
 
@@ -17,3 +20,8 @@ export default {
   },
 };
 </script>
+<style>
+.text--deco-none {
+  text-decoration: none;
+}
+</style>
