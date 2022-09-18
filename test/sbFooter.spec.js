@@ -2,6 +2,7 @@ import Vuetify from 'vuetify';
 import '@testing-library/jest-dom';
 import SBFooter from '@/components/SBFooter.vue';
 import { mount } from '@vue/test-utils';
+import { testEmailLink } from './utils/helpers.js';
 
 let vuetify, wrapper;
 
@@ -25,6 +26,12 @@ describe('SBFooter tests', () => {
 
   test('it has an email for contact info', () => {
     expect(wrapper.text()).toContain('info@seabreezerentals.org');
+    testEmailLink(
+      wrapper,
+      '.contact-email-link',
+      'info@seabreezerentals.org',
+      'mailto:info@seabreezerentals.org'
+    );
   });
 
   test('it has copyright info', () => {

@@ -21,7 +21,9 @@
       </a>
     </div>
 
-    <div class="my-6">info@seabreezerentals.org</div>
+    <div class="my-6">
+      <a :href="`mailto:${email}`" class="contact-email-link">{{ email }}</a>
+    </div>
 
     <div>&copy; {{ copyright }}</div>
   </v-footer>
@@ -37,6 +39,7 @@ export default {
       servicingAreas: ['Oak Island, NC', 'Caswell Beach, NC', 'Southport, NC'],
       socialMedia: [],
       copyright: `${thisYear} Seabreeze Cabana Rentals`,
+      email: 'info@seabreezerentals.org',
     };
   },
 };
