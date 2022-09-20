@@ -4,9 +4,14 @@
       <NuxtLink class="text--deco-none home-link" to="/">{{ title }}</NuxtLink>
     </v-toolbar-title>
     <v-spacer />
-    <NuxtLink class="text--deco-none contact-link" to="/contact"
-      >contact</NuxtLink
+    <NuxtLink
+      v-for="link of links"
+      :key="link"
+      :class="`text--deco-none ${link.toLowerCase()}-link`"
+      :to="`/${link.toLowerCase()}`"
     >
+      {{ link }}
+    </NuxtLink>
   </v-app-bar>
 </template>
 
@@ -16,6 +21,7 @@ export default {
   data() {
     return {
       title: 'Seabreeze Cabana Rentals',
+      links: ['contact', 'FAQ'],
     };
   },
 };

@@ -12,5 +12,6 @@ describe('App bar tests', () => {
   test('content', () => {
     testNuxtLink(wrapper, '.home-link', 'Seabreeze Cabana Rentals', '/');
     testNuxtLink(wrapper, '.contact-link', 'contact', '/contact');
+    testNuxtLink(wrapper, '.faq-link', 'FAQ', '/faq');
   });
 });
