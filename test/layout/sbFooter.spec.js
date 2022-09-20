@@ -1,8 +1,8 @@
 import Vuetify from 'vuetify';
 import '@testing-library/jest-dom';
-import SBFooter from '@/components/SBFooter.vue';
+import SBFooter from '@/layouts/SBFooter.vue';
 import { mount } from '@vue/test-utils';
-import { testEmailLink } from './utils/helpers.js';
+import { testEmailLink } from '../utils/helpers.js';
 
 let vuetify, wrapper;
 

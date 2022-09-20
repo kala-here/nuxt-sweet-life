@@ -1,7 +1,7 @@
-import AppBar from '@/components/AppBar.vue';
+import AppBar from '@/layouts/AppBar.vue';
 import Vuetify from 'vuetify';
 import { mount } from '@vue/test-utils';
-import { testNuxtLink } from './utils/helpers.js';
+import { testNuxtLink } from '../utils/helpers.js';
 
 const vuetify = new Vuetify();
 const wrapper = mount(AppBar, {

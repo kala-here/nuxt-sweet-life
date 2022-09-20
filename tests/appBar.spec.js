@@ -1,5 +1,5 @@
 import Vuetify from 'vuetify';
-import AppBar from '@/components/AppBar.vue';
+import AppBar from '@/layouts/AppBar.vue';
 import { mount } from '@vue/test-utils';
 
 const vuetify = new Vuetify();

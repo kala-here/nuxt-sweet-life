@@ -1,7 +1,7 @@
 import contactPage from '@/pages/contact.vue';
 import Vuetify from 'vuetify';
 import { mount } from '@vue/test-utils';
-import { testEmailLink } from './utils/helpers.js';
+import { testEmailLink } from '../utils/helpers.js';
 
 const vuetify = new Vuetify();
 const wrapper = mount(contactPage, {

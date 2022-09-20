@@ -1,4 +1,4 @@
-import HomePage from '../pages/index.vue';
+import HomePage from '@/pages/index.vue';
 import Vuetify from 'vuetify';
 import { mount } from '@vue/test-utils';
 
