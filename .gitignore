@@ -1,3 +1,8 @@
 node_modules/
+<<<<<<< HEAD
 .nuxt/*
 coverage/*
+=======
+coverage
+.nuxt/
+>>>>>>> 8dae32a6bfa0ba7606d628873865e13b281e9e74
