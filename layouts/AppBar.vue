@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       title: 'Seabreeze Cabana Rentals',
-      links: ['contact', 'FAQ'],
+      links: ['Contact', 'FAQ', 'Reserve'],
     };
   },
 };
