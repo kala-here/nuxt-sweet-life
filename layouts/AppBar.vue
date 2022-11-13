@@ -1,9 +1,9 @@
 <template>
-  <v-app-bar fixed app class="">
-    <v-toolbar-title class="top-0">
+  <v-app-bar fixed app class="d-flex justify-center w-full">
+    <div>
       <logo />
-    </v-toolbar-title>
-    <v-spacer />
+    </div>
+    <!-- <v-spacer />
     <NuxtLink
       v-for="(link, index) of links"
       :key="link"
@@ -14,7 +14,7 @@
       :to="`/${link.toLowerCase()}`"
     >
       {{ link }}
-    </NuxtLink>
+    </NuxtLink> -->
   </v-app-bar>
 </template>
 
@@ -35,6 +35,6 @@ export default {
 <style>
 .v-toolbar,
 .v-toolbar__content {
-  height: 127px !important;
+  height: 175px !important;
 }
 </style>

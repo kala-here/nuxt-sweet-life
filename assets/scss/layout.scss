@@ -11,10 +11,14 @@ $subtle-gradient: linear-gradient(
   #e3eeff 100%
 );
 
+// .v-application {
+//   background: $green-to-blue-gradient-2 !important;
+// }
+
 .module-border-wrap {
   padding: 3px;
   position: relative;
-  background: #3e86cc;
+  background: $green-to-blue-gradient-2;
 }
 .module-border-wrap-2 {
   padding: 3px;
@@ -31,6 +35,9 @@ $subtle-gradient: linear-gradient(
   // background-size: contain;
   // background-position-y: bottom !important;
   // background-attachment: fixed !important;
+}
+.appbar__bg {
+  background-color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .bg--white {

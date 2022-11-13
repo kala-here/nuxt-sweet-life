@@ -1,5 +1,5 @@
 <template>
-  <div class="text--center cursor--pointer">
+  <div class="text--center cursor--pointer module-border-wrap">
     <v-hover v-slot="{ hover }">
       <v-card :elevation="hover ? 16 : 2" class="pa-6 price-card flex-grow-1">
         <h1>{{ details.label }}</h1>

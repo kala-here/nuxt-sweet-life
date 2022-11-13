@@ -1,10 +1,10 @@
 <template>
   <NuxtLink
-    class="text--deco-none home-link logo-container__height"
+    class="text--deco-none home-link"
     to="/"
     :aria-label="title"
   >
-    <v-img :src="require('../static/logo.svg')" max-width="225" class="mt-6" />
+    <v-img :src="require('../static/logo.svg')" max-width="300" class="mt-12" />
   </NuxtLink>
 </template>
 <script>
@@ -17,3 +17,8 @@ export default {
   },
 };
 </script>
+<style>
+.logo-container__height {
+  height: 300px;
+}
+</style>

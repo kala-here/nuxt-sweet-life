@@ -17,6 +17,6 @@ export default {
 </script>
 <style>
 .h-75 {
-  height: 75px;
+  height: 150px;
 }
 </style>
