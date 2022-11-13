@@ -4,11 +4,7 @@
     to="/"
     :aria-label="title"
   >
-    <v-img
-      :src="require('../static/logo.svg')"
-      max-width="250"
-      class="logo mt-9"
-    />
+    <v-img :src="require('../static/logo.svg')" max-width="225" class="mt-6" />
   </NuxtLink>
 </template>
 <script>
@@ -21,8 +17,3 @@ export default {
   },
 };
 </script>
-<style>
-.logo {
-  position: relative;
-}
-</style>

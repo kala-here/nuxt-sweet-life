@@ -1,10 +1,6 @@
 <template>
-  <v-footer absolute app class="d-flex flex-column justify-center py-6">
-    <div class="my-6 text--center" aria-label="service locations">
-      <div v-for="town of servicingAreas" :key="town">{{ town }}</div>
-    </div>
-
-    <div class="my-6" v-if="socialMedia.length">
+  <v-footer absolute app class="footer__bg d-flex justify-center">
+    <!-- <div class="mt-3" v-if="socialMedia.length">
       <a
         v-for="social in socialMedia"
         :key="social.icon"
@@ -21,11 +17,16 @@
       </a>
     </div>
 
-    <div class="my-6">
+    <div class="mt-3">
       <a :href="`mailto:${email}`" class="contact-email-link">{{ email }}</a>
-    </div>
+    </div> -->
 
     <div>&copy; {{ copyright }}</div>
+    <!-- <div class="text--center mt-3" aria-label="service locations">
+      <span class="mx-2" v-for="town of servicingAreas" :key="town">{{
+        town
+      }}</span>
+    </div> -->
   </v-footer>
 </template>
 
