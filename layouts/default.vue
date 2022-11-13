@@ -26,7 +26,9 @@ export default {
 </script>
 <style lang="scss">
 .v-application {
-  background-image: url(../static/grass-ocean-clouds.JPG) !important;
+  background-image: url(../static/lighthouse.JPG) !important;
+  // background-position: 50% 0 !important;
+  background-size: cover !important;
   // background-repeat: no-repeat !important;
   // background-attachment: fixed !important;
 }

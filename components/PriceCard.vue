@@ -1,5 +1,5 @@
 <template>
-  <div class="module-border-wrap text--center">
+  <div class="text--center cursor--pointer">
     <v-hover v-slot="{ hover }">
       <v-card :elevation="hover ? 16 : 2" class="pa-6 price-card flex-grow-1">
         <h1>{{ details.label }}</h1>
@@ -52,6 +52,8 @@ export default {
 <style>
 .price {
   font-size: 32px;
+}
+.price-card {
 }
 .dollar-sign {
   margin-top: 10px;
