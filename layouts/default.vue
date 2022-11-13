@@ -3,7 +3,7 @@
     <app-bar class="z-3" />
 
     <v-main>
-      <v-container class="mx-0">
+      <v-container>
         <Nuxt />
       </v-container>
     </v-main>
@@ -26,9 +26,9 @@ export default {
 </script>
 <style lang="scss">
 .v-application {
-  background-image: url(../static/723178.svg) !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
+  background-image: url(../static/grass-ocean-clouds.JPG) !important;
+  // background-repeat: no-repeat !important;
+  // background-attachment: fixed !important;
 }
 // main {
 //   display: flex;
