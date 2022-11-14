@@ -26,32 +26,9 @@ export default {
 </script>
 <style lang="scss">
 .v-application {
-  // background-image: url(../static/lighthouse.JPG) !important;
-  // background-position: 50% 0 !important;
-  background-size: cover !important;
-  // background-repeat: no-repeat !important;
-  // background-attachment: fixed !important;
+  background-image: url(../static/dots-2.svg) !important;
+  background-position: 0 50vh !important;
+  background-repeat: repeat-x !important;
+  background-attachment: fixed !important;
 }
-// main {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   .container {
-//     max-width: 100vh;
-//     // width: fit-content;
-//     // display: flex;
-//     // align-items: center;
-//   }
-// }
-// @media only screen and (min-width: 642px) and (max-width: 1000px) {
-//   .v-application {
-//     /* background-image: url(../static/723178.svg) !important; */
-//     /* background-repeat: no-repeat !important; */
-//     /* background-position-y: 100% !important; */
-//   }
-//   main {
-//     display: flex;
-//     align-items: flex-start;
-//   }
-// }
 </style>

@@ -1,9 +1,10 @@
 <template>
-  <div class="w-full">
+  <div>
     <v-spacer class="h-75" />
 
     <div class="d-flex justify-center flex-grow-1">
       <pricing />
+      <div class="bg-texture" />
     </div>
   </div>
 </template>

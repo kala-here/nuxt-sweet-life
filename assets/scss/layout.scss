@@ -11,10 +11,6 @@ $subtle-gradient: linear-gradient(
   #e3eeff 100%
 );
 
-// .v-application {
-//   background: $green-to-blue-gradient-2 !important;
-// }
-
 .module-border-wrap {
   padding: 3px;
   position: relative;
@@ -27,14 +23,7 @@ $subtle-gradient: linear-gradient(
 }
 
 .footer__bg {
-  // height: 500px;
-  // background-color: rgba(0, 0, 0, 0.2) !important;
-  background-color: rgba(255, 255, 255, 0) !important;
-  // background-image: url(../../static/723178.svg) !important;
-  // background-repeat: no-repeat !important;
-  // background-size: contain;
-  // background-position-y: bottom !important;
-  // background-attachment: fixed !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
 }
 .appbar__bg {
   background-color: rgba(255, 255, 255, 0.7) !important;
