@@ -1,5 +1,7 @@
 <template>
   <div>
+    <v-spacer class="h-75" />
+
     <h2>
       {{ title }}
     </h2>

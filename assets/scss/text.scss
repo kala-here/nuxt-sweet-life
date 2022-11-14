@@ -1,0 +1,12 @@
+.text--deco-none {
+  text-decoration: none;
+}
+.text--gradient {
+  background: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text--break {
+  word-wrap: normal;
+}

@@ -1,5 +1,12 @@
 <template>
-  <pricing />
+  <div>
+    <v-spacer class="h-75" />
+
+    <div class="d-flex justify-center flex-grow-1">
+      <pricing />
+      <div class="bg-texture" />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -9,3 +16,8 @@ export default {
   components: { Pricing },
 };
 </script>
+<style>
+.h-75 {
+  height: 150px;
+}
+</style>

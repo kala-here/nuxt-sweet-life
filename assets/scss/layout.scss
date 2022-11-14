@@ -1,0 +1,44 @@
+$sunrise-gradient: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+$beach-gradient: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+$beach-gradient-2: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+$cream-to-purple-gradient: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+$green-to-blue-gradient: linear-gradient(to right, #3e86cc 0%, #275b97 100%);
+$green-to-blue-gradient-2: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+$subtle-gradient: linear-gradient(
+  to top,
+  #f3e7e9 0%,
+  #e3eeff 99%,
+  #e3eeff 100%
+);
+
+.module-border-wrap {
+  padding: 3px;
+  position: relative;
+  background: $green-to-blue-gradient-2;
+}
+.module-border-wrap-2 {
+  padding: 3px;
+  position: relative;
+  background: $green-to-blue-gradient;
+}
+
+.footer__bg {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+.appbar__bg {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.bg--white {
+  background-color: rgb(255, 255, 255);
+}
+
+.z-1 {
+  z-index: 1 !important;
+}
+.z-2 {
+  z-index: 2 !important;
+}
+.z-3 {
+  z-index: 999 !important;
+}
